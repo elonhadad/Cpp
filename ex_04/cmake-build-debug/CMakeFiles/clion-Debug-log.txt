@@ -1,0 +1,4 @@
+"/Users/elonhadad/Comuter Science/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=/Users/elonhadad/Comuter Science/CLion.app/Contents/bin/ninja/mac/ninja" -G Ninja -S "/Users/elonhadad/Library/Mobile Documents/com~apple~CloudDocs/מכללת תל חי - מדמ״ח/שנה בי/cpp/תרגילים/ex_04" -B "/Users/elonhadad/Library/Mobile Documents/com~apple~CloudDocs/מכללת תל חי - מדמ״ח/שנה בי/cpp/תרגילים/ex_04/cmake-build-debug"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/elonhadad/Library/Mobile Documents/com~apple~CloudDocs/מכללת תל חי - מדמ״ח/שנה בי/cpp/תרגילים/ex_04/cmake-build-debug
