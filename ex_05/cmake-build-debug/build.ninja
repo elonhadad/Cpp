@@ -1,0 +1,151 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: ex_05
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/elonhadad/Library/Mobile$ Documents/com~apple~CloudDocs/מכללת$ תל$ חי$ -$ מדמ״ח/שנה$ בי/cpp/תרגילים/ex_05/cmake-build-debug/
+# =============================================================================
+# Object build statements for EXECUTABLE target ex_05
+
+
+#############################################
+# Order-only phony target for ex_05
+
+build cmake_object_order_depends_target_ex_05: phony || CMakeFiles/ex_05.dir
+
+build CMakeFiles/ex_05.dir/main.cpp.o: CXX_COMPILER__ex_05_Debug /Users/elonhadad/Library/Mobile$ Documents/com~apple~CloudDocs/מכללת$ תל$ חי$ -$ מדמ״ח/שנה$ בי/cpp/תרגילים/ex_05/main.cpp || cmake_object_order_depends_target_ex_05
+  DEP_FILE = CMakeFiles/ex_05.dir/main.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -fcolor-diagnostics -std=gnu++11
+  OBJECT_DIR = CMakeFiles/ex_05.dir
+  OBJECT_FILE_DIR = CMakeFiles/ex_05.dir
+
+build CMakeFiles/ex_05.dir/Graph.cpp.o: CXX_COMPILER__ex_05_Debug /Users/elonhadad/Library/Mobile$ Documents/com~apple~CloudDocs/מכללת$ תל$ חי$ -$ מדמ״ח/שנה$ בי/cpp/תרגילים/ex_05/Graph.cpp || cmake_object_order_depends_target_ex_05
+  DEP_FILE = CMakeFiles/ex_05.dir/Graph.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -fcolor-diagnostics -std=gnu++11
+  OBJECT_DIR = CMakeFiles/ex_05.dir
+  OBJECT_FILE_DIR = CMakeFiles/ex_05.dir
+
+build CMakeFiles/ex_05.dir/Management_system.cpp.o: CXX_COMPILER__ex_05_Debug /Users/elonhadad/Library/Mobile$ Documents/com~apple~CloudDocs/מכללת$ תל$ חי$ -$ מדמ״ח/שנה$ בי/cpp/תרגילים/ex_05/Management_system.cpp || cmake_object_order_depends_target_ex_05
+  DEP_FILE = CMakeFiles/ex_05.dir/Management_system.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -fcolor-diagnostics -std=gnu++11
+  OBJECT_DIR = CMakeFiles/ex_05.dir
+  OBJECT_FILE_DIR = CMakeFiles/ex_05.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target ex_05
+
+
+#############################################
+# Link the executable ex_05
+
+build ex_05: CXX_EXECUTABLE_LINKER__ex_05_Debug CMakeFiles/ex_05.dir/main.cpp.o CMakeFiles/ex_05.dir/Graph.cpp.o CMakeFiles/ex_05.dir/Management_system.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6
+  OBJECT_DIR = CMakeFiles/ex_05.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = ex_05
+  TARGET_PDB = ex_05.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/elonhadad/Library/Mobile Documents/com~apple~CloudDocs/מכללת תל חי - מדמ״ח/שנה בי/cpp/תרגילים/ex_05/cmake-build-debug" && "/Users/elonhadad/Comuter Science/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/elonhadad/Library/Mobile Documents/com~apple~CloudDocs/מכללת תל חי - מדמ״ח/שנה בי/cpp/תרגילים/ex_05/cmake-build-debug" && "/Users/elonhadad/Comuter Science/CLion.app/Contents/bin/cmake/mac/bin/cmake" --regenerate-during-build -S"/Users/elonhadad/Library/Mobile Documents/com~apple~CloudDocs/מכללת תל חי - מדמ״ח/שנה בי/cpp/תרגילים/ex_05" -B"/Users/elonhadad/Library/Mobile Documents/com~apple~CloudDocs/מכללת תל חי - מדמ״ח/שנה בי/cpp/תרגילים/ex_05/cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Target aliases.
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/elonhadad/Library/Mobile Documents/com~apple~CloudDocs/מכללת תל חי - מדמ״ח/שנה בי/cpp/תרגילים/ex_05/cmake-build-debug
+
+build all: phony ex_05
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Users/elonhadad/Library/Mobile$ Documents/com~apple~CloudDocs/מכללת$ תל$ חי$ -$ מדמ״ח/שנה$ בי/cpp/תרגילים/ex_05/CMakeLists.txt CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Users/elonhadad/Comuter$ Science/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Users/elonhadad/Library/Mobile$ Documents/com~apple~CloudDocs/מכללת$ תל$ חי$ -$ מדמ״ח/שנה$ בי/cpp/תרגילים/ex_05/CMakeLists.txt CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all

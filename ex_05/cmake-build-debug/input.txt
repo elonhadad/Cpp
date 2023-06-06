@@ -1,0 +1,5 @@
+Tel-Aviv	Haifa	8
+Kyriat-Shmona	Ashdod	6
+Afula	Kiryat-Ata	4
+Eilat	Tel-Aviv	11
+Beer-Sheva	Tel-Aviv	8	
